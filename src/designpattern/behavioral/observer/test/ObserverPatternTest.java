@@ -7,6 +7,12 @@ import designpattern.behavioral.observer.weatherstation.WeatherStation;
 import designpattern.behavioral.observer.weatherstation.devices.PcDisplay;
 import designpattern.behavioral.observer.weatherstation.devices.PhoneDisplay;
 
+/**
+ * The Observer Pattern defines a one-to-many
+ * dependency between objects so that when one
+ * object changes state, all of its dependents are
+ * notified and updated automatically.
+ */
 public class ObserverPatternTest {
     public static void main(String[] args) {
 
