@@ -12,4 +12,6 @@
     implementation.
 3. Favor composition over inheritance.
 4. Classes should be open for extension, but closed for modification.
-5. 
+5. The Dependency Inversion Principle:
+   Depend upon abstractions. Do not depend upon concrete classes.
+6. 
