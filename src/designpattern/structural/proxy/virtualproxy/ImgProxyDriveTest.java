@@ -36,19 +36,14 @@ public class ImgProxyDriveTest {
         frame.setJMenuBar(jMenuBar);
 
 
-        URL[] initURL = new URL[]{
-                new URL("http://www.cs.yale.edu/homes/freeman-elisabeth/2004/9/Oliver_sm.jpg")
-        };
-        int length = initURL.length;
+        URL initURL =  new URL("http://www.cs.yale.edu/homes/freeman-elisabeth/2004/9/Oliver_sm.jpg");
         Random random = new Random();
-        System.out.println(random.nextInt(length));
 
-//        Icon icon = new ImageProxy(initURL);
+        Icon icon = new ImageProxy(initURL);
         jMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("button listener");
-                Icon icon = new ImageProxy(initURL[random.nextInt(length)]);
                 imageComponent = new ImageComponent(icon);
                 for (Component component : frame.getContentPane().getComponents()) {
                     ImageComponent a = (ImageComponent) component;
